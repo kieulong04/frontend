@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "composite": true,                        // Cho phép dự án TypeScript này được tham chiếu từ các dự án khác
+    "skipLibCheck": true,                     // Bỏ qua việc kiểm tra kiểu của các tệp `.d.ts`
+    "module": "ESNext",                       // Sử dụng kiểu module ESNext, hỗ trợ import/export hiện đại
+    "moduleResolution": "bundler",            // Sử dụng phương thức phân giải module kiểu bundler
+    "allowSyntheticDefaultImports": true,     // Cho phép import mặc định từ các module không có export mặc định
+    "strict": true                            // Bật tất cả các kiểm tra nghiêm ngặt, làm cho TypeScript trở nên chặt chẽ hơn trong việc kiểm tra lỗi
+  },
+  "include": ["vite.config.ts"]               // Chỉ định tệp `vite.config.ts` là tệp cần biên dịch
+}
